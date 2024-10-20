@@ -8,8 +8,18 @@
 
 header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.header-like {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 19px;
 }
 
 .avatar {
@@ -17,14 +27,46 @@ header {
     height: 70px;
     border-radius: 50%;
     margin-right: 20px;
-    margin-top: -20px;
 }
 
-.github-link {
+.min-size-header {
+    min-width: 130px;
+}
+
+.class-style {
     color: #42a85d;
     text-decoration: none;
-    font-size: x-large;
+    font-size: 20px;
+}
 
+.highlight-style {
+    color: #57A64A;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.keyword-style {
+    color: #5180A7;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.string-style {
+    color: #D69D85;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.def-style {
+    color: #F8F8F8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.comment-style {
+    color: #575757;
+    text-decoration: none;
 }
 
 .info {
@@ -35,23 +77,23 @@ header {
 }
 
 .profile-photo {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     margin-right: 20px;
 }
 
 .contact-info {
-    max-width: 400px;
-    text-align: left; /* Выравнивание текста влево */
+    max-width: 600px;
+    text-align: left;
 }
 
 .contact-info h2 {
     margin-top: 0;
 }
 
-.linkedin-link {
-    color: #90ee90; /* Светло-зеленый */
+.green-text {
+    color: #90ee90;
     text-decoration: none;
 }
 
