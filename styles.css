@@ -249,14 +249,14 @@ body:not(.hover-suspended) .social-item:hover .social-caption,
 
 .page {
     max-width: 1600px;
-    margin: -85px auto 0;
+    margin: calc(28px - clamp(48px, 6.2vw, 130px)) auto 0;
     padding: 0 20px 140px;
     text-align: center;
 }
 
 .portfolio-title {
     padding: 0 20px;
-    margin: 0 0 12px;
+    margin: 0;
 }
 
 /* ---------- Portfolio ---------- */
