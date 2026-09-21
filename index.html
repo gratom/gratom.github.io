@@ -3,84 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkov Alexander CV</title>
+    <title>Volkov Alexander — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <img src="https://avatars.githubusercontent.com/u/29227138?v=4" alt="gitAvatar" class="avatar">
-    <a href="https://github.com/gratom" class="class-style">>> github/gratom</a>&nbsp;&nbsp;
-    <span class="keyword-style comment-style">AKA</span>
-    <div class="header-like">
-        <div class="keyword-style min-size-header ">&nbsp;Volkov Alexander</div>
-        <div class="keyword-style min-size-header ">&nbsp;<span class="comment-style">|</span> Senior C#</div>
-        <div class="keyword-style min-size-header ">&nbsp;<span class="comment-style">|</span> Unity dev</div>
-        <div class="keyword-style min-size-header ">&nbsp;<span class="comment-style">|</span> Team Lead</div>
-    </div>
-</header>
-<section class="info">
-    <div class="contact-info">
-        <div class="keyword-style">public class <span class="class-style">Contacts</span></div>
-        <div class="def-style">{</div>
-        <div class="def-style"><span class="keyword-style">&nbsp;&nbsp;&nbsp;string </span>Email = <span
-                class="string-style"> "gratomov@gmail.com"</span>;
-        </div>
-        <div class="def-style"><span class="class-style">&nbsp;&nbsp;&nbsp;link </span>LinkedIn =
-            <span class="keyword-style">new </span><span class="class-style">link</span>(<a
-                    href="https://www.linkedin.com/in/volkov-alexander-03a322177/"
-                    class="def-style">gratom</a>);
-        </div>
-        <div class="def-style"><span class="keyword-style">&nbsp;&nbsp;&nbsp;string </span>Discord = <span
-                class="string-style"> "gratom.9779"</span>;
-        </div>
-        <div class="def-style"><span class="keyword-style">&nbsp;&nbsp;&nbsp;string </span>phone = <span
-                class="string-style"> "+380 67-153-88-60"</span>;
-        </div>
-        <div class="def-style">}</div>
-        <br>
-        <div class="comment-style">/*About
-            <br>&nbsp;&nbsp;&nbsp;I have been programming <span class="highlight-style">since the age of 14</span>,
-            during this time I managed to try Pascal,
-            C++, C#, Delphi, Java, JS and a couple of functional languages, such as Lisp.<br><br>
-            About <span class="highlight-style">8 years</span> ago I got acquainted with Unity and since then I have
-            been mainly developing games in
-            conjunction with C#.<br><br>
-            I managed to work in <span class="highlight-style">8 companies and 40+ projects</span> of different sizes,
-            both as a developer and as a lead.<br><br>
-            I did all kinds of work: scripting, architecture development, project evaluation, communication with
-            clients, digging into legacy code, setting up the scene, lighting, UI, optimization, etc.<br><br>
-            I'm still not very good at 2 things - complex manual multithreading and writing shaders, but I'm gradually
-            filling in the gaps in these areas)<br><br>
-            I have several of my personal projects that I wrote at different times, most of them are test or unfinished,
-            but thanks to them, I made a large number of tools. I'm a big fan of code optimization and custom tools for
-            the Unity editor.<br><br>
-            In my free time I often play computer games, and sometimes I make mods for them)<br>*/
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title gradient-text heading heading--xl">Hi.<br>I'm a Unity Dev</h1>
+            <ul class="hero-tags gradient-text heading">
+                <li>10+ years of experience</li>
+                <li>Full-stack</li>
+                <li>Team lead</li>
+                <li>Senior C#</li>
+            </ul>
         </div>
     </div>
+    <div class="hero-fade"></div>
 </section>
 
-<!--<section class="content">-->
-<!--    <div class="sidebar">-->
-<!--        <div class="sidebar-inner-contents">-->
-<!--            <h2>Оглавление</h2>-->
-<!--            <ul>-->
-<!--                <li><a href="#work">Места работы</a></li>-->
-<!--                <li><a href="#education">Место учебы</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="sidebar-inner-main">-->
-<!--        <div class="main-content">-->
-<!--            <section id="work">-->
-<!--                <h2>Места работы</h2>-->
-<!--                <p>Здесь будет информация о ваших местах работы.</p>-->
-<!--            </section>-->
-<!--            <section id="education">-->
-<!--                <h2>Место учебы</h2>-->
-<!--                <p>Здесь будет информация о вашем учебном заведении.</p>-->
-<!--            </section>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="socials">
+    <div class="socials-row">
+
+        <div class="social-item" data-social="gmail">
+            <button type="button" class="social-btn" id="gmail-btn" aria-label="Email">
+                <img src="img/gmail_style_icon.png" alt="Gmail">
+            </button>
+            <span class="social-caption" id="gmail-caption" data-default="gratomov@gmail.com (click to copy)">gratomov@gmail.com (click to copy)</span>
+        </div>
+
+        <div class="social-item">
+            <a class="social-btn" href="https://github.com/gratom" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="img/github_style_icon.png" alt="GitHub">
+            </a>
+            <span class="social-caption">view on github.com...</span>
+        </div>
+
+        <div class="social-item">
+            <a class="social-btn" href="https://www.linkedin.com/in/volkov-alexander-03a322177/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="img/linkedin_style_icon.png" alt="LinkedIn">
+            </a>
+            <span class="social-caption">view on linkedin.com...</span>
+        </div>
+
+        <div class="social-item">
+            <a class="social-btn" href="https://t.me/MaxGratomov" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <img src="img/telegram_style_icon.png" alt="Telegram">
+            </a>
+            <span class="social-caption">contact me via telegram</span>
+        </div>
+
+        <div class="social-item">
+            <a class="social-btn" href="https://discord.com/users/460834008742494231" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                <img src="img/discord_style_icon.png" alt="Discord">
+            </a>
+            <span class="social-caption">contact me via discord</span>
+        </div>
+
+    </div>
+
+    <h2 class="gradient-text heading heading--lg portfolio-title">Portfolio</h2>
+
+    <div class="socials-fade"></div>
+</section>
+
+<main class="page">
+    <div class="project-list">
+
+        <article class="project-card">
+            <div class="project-text">
+                <div class="project-header">
+                    <h3 class="project-title gradient-text heading heading--md">Calamity</h3>
+                    <div class="project-links">
+                        <a class="store-btn" href="https://store.steampowered.com/app/3910020/Calamity/" target="_blank" rel="noopener noreferrer" aria-label="Steam">
+                            <img src="img/steam_icon.png" alt="Steam">
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tags">2D MMORPG, Sandbox, Action RPG, PC, Steam</p>
+                <div class="project-description">
+                    Calamity is a 2D top-down sandbox MMORPG featuring action combat, dungeon crawling,
+                    3-player online co-op, and a player-driven economy. Primarily focused on architectural
+                    implementation of the game's UI/UX using reactive programming patterns. Developed
+                    high-performance, dynamic UI systems and managed complex data subscriptions and
+                    aggregation from backend server events via custom server. Integrated rich UI animations,
+                    ensured seamless data binding, and contributed to general client gameplay features, bug
+                    fixes, and system enhancements.
+                </div>
+            </div>
+            <div class="project-image" style="background-image: url('img/calamity_game.png');"></div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-text">
+                <div class="project-header">
+                    <h3 class="project-title gradient-text heading heading--md">RunCraft</h3>
+                    <div class="project-links">
+                        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.BigBusiness.RunCraft&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Play">
+                            <img src="img/googleStore_icon.png" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tags">Survival-Runner, Roguelike, Mobile-Android</p>
+                <div class="project-description">
+                    RunCraft is a fast-paced voxel survival runner where players must manage resources,
+                    craft gear, and maintain their hunger levels during the day to battle monsters and
+                    survive the night. Players can choose unique characters and combine their perks to
+                    create a personalized playstyle. The project was developed from scratch—spanning
+                    everything from architecture to app store release—as a full-cycle indie development
+                    effort. It features a complex gameplay loop with dynamic abilities and a progression
+                    system, alongside a robust infrastructure that includes secure leaderboards, an
+                    anti-cheat system, localization, and seamless data migration during updates. In-app
+                    purchases (IAP), ad networks, and deep analytics systems were integrated, while the
+                    engine was meticulously optimized to ensure smooth performance even on decade-old
+                    mobile devices.
+                </div>
+            </div>
+            <div class="project-image" style="background-image: url('img/runcraft_game.png');"></div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-text">
+                <div class="project-header">
+                    <h3 class="project-title gradient-text heading heading--md">Cat Tree</h3>
+                    <div class="project-links">
+                        <a class="store-btn" href="https://store.steampowered.com/app/3198400/Cat_Tree" target="_blank" rel="noopener noreferrer" aria-label="Steam">
+                            <img src="img/steam_icon.png" alt="Steam">
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tags">Casual, Idle, Collections, Indie, PC, Steam</p>
+                <div class="project-description">
+                    Cat Tree is a relaxing casual idle game where players collect, grow, and manage a
+                    collection of unique cats residing on a mysterious expanding tree. Architected and
+                    built the entire codebase independently from scratch within a tight two-week
+                    timeframe, serving as the sole technical developer and mentor for an indie partner.
+                    Implemented a robust modular game architecture utilizing a Service Locator pattern, a
+                    custom UI framework wrapping Unity RectTransform, state serialization for instant
+                    state save/restore, and save file versioning. Integrated complex Spine 2D cat
+                    animations and custom Editor tooling to ensure high performance and smooth visual
+                    feedback.
+                </div>
+            </div>
+            <div class="project-image" style="background-image: url('img/cattree_game.png');"></div>
+        </article>
+
+    </div>
+</main>
+
+<script>
+    const gmailItem = document.querySelector('.social-item[data-social="gmail"]');
+    const gmailBtn = document.getElementById('gmail-btn');
+    const gmailCaption = document.getElementById('gmail-caption');
+    let copyResetTimer = null;
+
+    function resetGmailCaption() {
+        clearTimeout(copyResetTimer);
+        gmailCaption.textContent = gmailCaption.dataset.default;
+    }
+
+    gmailBtn.addEventListener('click', () => {
+        const email = 'gratomov@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+            gmailCaption.textContent = '(copied)';
+            clearTimeout(copyResetTimer);
+            copyResetTimer = setTimeout(resetGmailCaption, 1500);
+        });
+    });
+
+    gmailItem.addEventListener('mouseleave', resetGmailCaption);
+    gmailItem.addEventListener('focusout', resetGmailCaption);
+
+    // Prevent hover styles from looking "stuck" after the mouse leaves the tab
+    // (e.g. clicking a social link opens a new tab and focus returns without
+    // the cursor actually moving).
+    document.body.classList.add('hover-suspended');
+    document.addEventListener('mousemove', () => {
+        document.body.classList.remove('hover-suspended');
+    }, { once: true });
+
+    window.addEventListener('blur', () => {
+        document.body.classList.add('hover-suspended');
+    });
+
+    window.addEventListener('focus', () => {
+        document.addEventListener('mousemove', () => {
+            document.body.classList.remove('hover-suspended');
+        }, { once: true });
+    });
+</script>
+
 </body>
 </html>
