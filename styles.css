@@ -87,6 +87,28 @@ a {
     text-align: right;
 }
 
+#typewriter {
+    display: inline-block;
+    min-width: 0.3em;
+}
+
+#typewriter::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 0.85em;
+    margin-left: 3px;
+    background: var(--color-purple);
+    vertical-align: -0.1em;
+    animation: caret-blink 1s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 .hero-tags {
     list-style: none;
     margin: 0;

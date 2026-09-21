@@ -14,7 +14,7 @@
 <section class="hero">
     <div class="hero-content">
         <div class="hero-text">
-            <h1 class="hero-title gradient-text heading heading--xl">Hi.<br>I'm a Unity Dev</h1>
+            <h1 class="hero-title gradient-text heading heading--xl">Hi.<br>I'm <span id="typewriter">Alex Volkov</span></h1>
             <ul class="hero-tags gradient-text heading">
                 <li>10+ years of experience</li>
                 <li>Full-stack</li>
@@ -156,6 +156,39 @@
 </main>
 
 <script>
+    (function () {
+        const el = document.getElementById('typewriter');
+        const original = el.textContent;
+        const target = 'a Unity Dev';
+        const startDelay = 1700;
+        const eraseSpeed = 65;
+        const typeSpeed = 80;
+
+        function erase(text, cb) {
+            let i = text.length;
+            (function step() {
+                el.textContent = text.slice(0, i);
+                if (i <= 0) { cb(); return; }
+                i--;
+                setTimeout(step, eraseSpeed);
+            })();
+        }
+
+        function type(text, cb) {
+            let i = 0;
+            (function step() {
+                el.textContent = text.slice(0, i);
+                if (i >= text.length) { if (cb) cb(); return; }
+                i++;
+                setTimeout(step, typeSpeed);
+            })();
+        }
+
+        setTimeout(() => {
+            erase(original, () => type(target));
+        }, startDelay);
+    })();
+
     const gmailItem = document.querySelector('.social-item[data-social="gmail"]');
     const gmailBtn = document.getElementById('gmail-btn');
     const gmailCaption = document.getElementById('gmail-caption');
